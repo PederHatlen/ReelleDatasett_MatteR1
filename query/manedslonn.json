@@ -1,0 +1,34 @@
+{
+	"query": [
+	  {
+		"code": "MaaleMetode",
+		"selection": {
+		  "filter": "item",
+		  "values": [
+			"02"
+		  ]
+		}
+	  },
+	  {
+		"code": "NACE2007",
+		"selection": {
+		  "filter": "vs:NACELonnalle02",
+		  "values": [
+			"A-S"
+		  ]
+		}
+	  },
+	  {
+		"code": "ContentsCode",
+		"selection": {
+		  "filter": "item",
+		  "values": [
+			"Manedslonn"
+		  ]
+		}
+	  }
+	],
+	"response": {
+	  "format": "json-stat2"
+	}
+  }
