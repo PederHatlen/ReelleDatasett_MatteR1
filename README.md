@@ -59,8 +59,7 @@ Mitt andre programm henter først ut data fra ssb sin web-api ([ssb.no/api](http
 Denne dataen blir dermed cachet, sån at man slipper å hente samme data ut flere ganger (Variabelen newData bestemmer henting av ny data).  
 Etter dette henter programmet ut alle verdiene markert med tid som x og plaseringen som y verdiene.  
 Programmet gjør dermed en regresjonsanalyse, og får ut fire konstantledd (`a`, `b`, `c`, `d`) som sammen danner funksjonen `f(x) = a*x**3 + b*x**2 + c*x + d`.  
-I skogsvei datasettet blir `a = 0.025173298020146784`, `b = -3.005141260417284`, `c = 82.23125326274656` og `d = 494.5656629232`.  
-(Alle )
+I skogsvei datasettet blir `a = 0.025173298020146784`, `b = -3.005141260417284`, `c = 82.23125326274656` og `d = 494.5656629232`.
 
 #### Kode (del 2)
 
@@ -95,7 +94,7 @@ plt.plot(xArr, model(xArr), "--", color="red")
 
 #### Graf 2 (Ny/oppgradert skogsvei over tid / del 2)
 
-år 0 = 1950
+`år 0 = 1950`
 
 ![Ny skogsvei over tid](resultat/skogsvei_del2.png "Ny skogsvei over tid")  
 
@@ -146,3 +145,8 @@ b = -3.005141260417284
 c = 82.23125326274656
 d = 494.5656629232
 ```
+
+## Mine funn
+
+I dette prosjektet har jeg funnet ut at Norge bygde en del skogsveier rundt `1950 - 1990`, men at det har sunket ganske kraftig siden da.  
+Jeg har også lært meg to forskjellige regresjonsmetoder i python og lært meg litt av logikken bak programatisk regresjon under reaserchen av disse metodene.
